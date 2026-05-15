@@ -24,7 +24,10 @@ const db = mysql.createConnection({
   host: "10.0.4.4",
   user: "mysqladmin",
   password: "Budwiser@12345",
-  database: "appdb"
+  database: "appdb",
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 db.connect((err) => {
