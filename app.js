@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = mysql.createConnection({
   host: "10.0.4.4",
   user: "mysqladmin",
-  password: "YOUR_PASSWORD",
+  password: "Budwiser@12345",
   database: "appdb"
 });
 
